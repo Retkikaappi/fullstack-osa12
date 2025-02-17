@@ -1,0 +1,58 @@
+Script started on 2025-02-17 07:56:10+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="108" LINES="28"]
+# apt install nodejs
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 73%Reading package lists... 73%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 84%Reading package lists... 84%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 7%Reading state information... Done
+The following additional packages will be installed:
+  libnode109 node-acorn
+Suggested packages:
+  npm
+The following NEW packages will be installed:
+  libnode109 node-acorn nodejs
+0 upgraded, 3 newly installed, 0 to remove and 15 not upgraded.
+Need to get 12.1 MB of archives.
+After this operation, 52.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 nodejs amd64 18.19.1+dfsg-6ubuntu5 [306 kB]
+[33m0% [1 nodejs 12.8 kB/306 kB 4%][0m[33m                               9% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 node-acorn all 8.8.1+ds+~cs25.17.7-2 [115 kB]
+[33m9% [2 node-acorn 8468 B/115 kB 7%][0m[33m                                  16% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble/universe amd64 libnode109 amd64 18.19.1+dfsg-6ubuntu5 [11.6 MB]
+[33m16% [3 libnode109 1129 B/11.6 MB 0%][0m[33m                                    100% [Working][0m              Fetched 12.1 MB in 1s (13.8 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;27r8[1ASelecting previously unselected package nodejs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5439 files and directories currently installed.)
+Preparing to unpack .../nodejs_18.19.1+dfsg-6ubuntu5_amd64.deb ...
+7[28;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................] 87[28;0f[42m[30mProgress: [  8%][49m[39m [######................................................................................] 8Unpacking nodejs (18.19.1+dfsg-6ubuntu5) ...
+7[28;0f[42m[30mProgress: [ 15%][49m[39m [#############.........................................................................] 8Selecting previously unselected package node-acorn.
+Preparing to unpack .../node-acorn_8.8.1+ds+~cs25.17.7-2_all.deb ...
+7[28;0f[42m[30mProgress: [ 23%][49m[39m [###################...................................................................] 8Unpacking node-acorn (8.8.1+ds+~cs25.17.7-2) ...
+7[28;0f[42m[30mProgress: [ 31%][49m[39m [##########################............................................................] 8Selecting previously unselected package libnode109:amd64.
+Preparing to unpack .../libnode109_18.19.1+dfsg-6ubuntu5_amd64.deb ...
+7[28;0f[42m[30mProgress: [ 38%][49m[39m [#################################.....................................................] 8Unpacking libnode109:amd64 (18.19.1+dfsg-6ubuntu5) ...
+7[28;0f[42m[30mProgress: [ 46%][49m[39m [#######################################...............................................] 8Setting up node-acorn (8.8.1+ds+~cs25.17.7-2) ...
+7[28;0f[42m[30mProgress: [ 54%][49m[39m [##############################################........................................] 87[28;0f[42m[30mProgress: [ 62%][49m[39m [####################################################..................................] 8Setting up libnode109:amd64 (18.19.1+dfsg-6ubuntu5) ...
+7[28;0f[42m[30mProgress: [ 69%][49m[39m [###########################################################...........................] 87[28;0f[42m[30mProgress: [ 77%][49m[39m [##################################################################....................] 8Setting up nodejs (18.19.1+dfsg-6ubuntu5) ...
+7[28;0f[42m[30mProgress: [ 85%][49m[39m [########################################################################..............] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[28;0f[42m[30mProgress: [ 92%][49m[39m [###############################################################################.......] 8Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+
+7[0;28r8[1A[J# node a /usr/src/r ap	     p/index.js
+node:internal/modules/cjs/loader:1137
+  throw err;
+  ^
+
+Error: Cannot find module '/usr/sp/index.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:975:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)[39m
+[90m    at node:internal/main/run_main_module:28:49[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v18.19.1
+# ^[[A^[[B        node /usr/app/in      src/app/index.js
+Hello World
+# exit
+
+Script done on 2025-02-17 07:56:58+00:00 [COMMAND_EXIT_CODE="0"]
