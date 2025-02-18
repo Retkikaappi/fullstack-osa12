@@ -1,0 +1,239 @@
+Script started on 2025-02-18 09:41:38+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="28"]
+[?2004h]0;kaappi@DESKTOP-C51JTST: ~[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~[00m$ doc[K[K[Kcd backend_12_5/b[Kno[K[Ktodo-backend/
+[?2004l[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ ls
+[?2004lDockerfile  [0m[01;32mapp.js[0m  docker-compose.dev.yml  [01;34mmongo[0m       [01;34mnode_modules[0m       [01;32mpackage.json[0m  [01;34mroutes[0m
+[01;32mREADME.md[0m   [01;34mbin[0m     docker-compose.yml      [01;34mmongo_data[0m  [01;32mpackage-lock.json[0m  [01;34mredis[0m         [01;34mutil[0m
+[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ nano docker-compose.dev.yml 
+[?2004l[?2004h[?1049h[22;0;0t[1;28r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[26;46H(B[0;7m[ Reading... ](B[m[26;44H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 7.2                             docker-compose.dev.yml                                       [1;103H(B[m[27d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[27;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[28d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[92mservices[39m:[3;3H[92mmongo[39m:[4;5H[92mimage[39m: (B[mmongo[5;5H[92mports[39m:[6;6H(B[0;1m[33m[1K - [39m(B[m3456:27017[7;5H[92menvironment[39m:[8;7H[92mMONGO_INITDB_ROOT_USERNAME[39m: (B[mroot[9;7H[92mMONGO_INITDB_ROOT_PASSWORD[39m: (B[mexample[10;7H[92mMONGO_INITDB_DATABASE[39m: (B[mthe_database[11;5H[92mvolumes[39m:[12;6H(B[0;1m[33m[1K - [39m(B[m/mnt/c/vskoodit/fullstack/osa12/part12-containers-applications/todo-app/todo-backend/mongo/mong(B[0;7m>[13;6H(B[0;1m[33m[1K - [39m(B[m./mongo_data:/data/db[15d[92mvolumes[39m:[16;3H[92mmongo_data[39m:[2d(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[A[?25l[1;67H(B[0;7m*[103G(B[m[14;25r[14;1HM[1;28r[15;1H[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h [?25l[26d[K[?12l[?25h[14;3H [?25l[?12l[?25h  r[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h  [92mredis[39m:(B[m[?25l7[15;26r8[15dM[1;28r[15;1H[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h    i[?25l[?12l[?25hm[?25l[?12l[?25ha[?25l[?12l[?25hg[?25l[?12l[?25he[?25l[?12l[?25h[5G[92mimage[39m:(B[m[?25l[?12l[?25h[5Gimage:r[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[5G[92mimage[C[39m(B[m[K[?25l[?12l[?25h[41m [49m(B[m[?25l[?12l[?25h (B[mr[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l7[16;26r8[16dM[1;28r[16;1H[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h    p[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25ht[?25l[?12l[?25hs[?25l[?12l[?25h[5G[92mports[39m:(B[m[?25l[?12l[?25h[41m [49m(B[m[?25l[?12l[?25h [?25l7[17;26r8[17dM[1;28r[17;1H[?12l[?25h[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[41m  [49m(B[m[?25l[?12l[?25h[1K -[?25l[?12l[?25h(B[0;1m[33m[1K -(B[0m[41m [49m(B[m[?25l[?12l[?25h(B[0;1m[33m [39m(B[m3[?25l[?12l[?25h[41m [49m(B[m[K[?25l[?12l[?25h(B[0;1m[33m [39m(B[m5[?25l[?12l[?25h6[?25l[?12l[?25h [?25l[?12l[?25h[41m [49m(B[m[K[?25l[?12l[?25h(B[0;1m[33m [39m(B[m6[?25l[?12l[?25h3[?25l[?12l[?25h7[?25l[?12l[?25h9[?25l[?12l[?25h[92m6379[39m:(B[m[?25l[?12l[?25h[9G6379:6[?25l[?12l[?25h3[?25l[?12l[?25h7[?25l[?12l[?25h9[?25l[27;15H            (B[0;7mM-D(B[m DOS Format            (B[0;7mM-A(B[m Append[16X[27;79H(B[0;7mM-B(B[m Backup File[28;2H(B[0;7mC(B[m Cancel[17X[28;27H(B[0;7mM-M(B[m Mac Format            (B[0;7mM-P(B[m Prepend[15X[28;79H(B[0;7m^T(B[m Browse[K[26d(B[0;7mFile Name to Write: docker-compose.dev.yml                                                              [26;43H(B[m[?12l[?25h[?25l  [1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [103G(B[m[26;44H(B[0;7m[ Wrote 19 lines ](B[m[27;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut        (B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[K[28;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste      (B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[?12l[?25h[17;18H[?25l[26d[J[28d[?12l[?25h[28;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ nano docker-compose.dev.yml ls[Kcd backend_12_5/todo-backend/exit[Kdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker -it todo-backend-mongo-1 bashcompose -f docker-compose.dev.yml up --build[23Pnano docker-compose.dev.yml docker compose -f docker-compose.dev.yml up --build[23Pnano docker-compose.dev.yml ls[Kcd todo-backend/ls[Kcd backend_12_5/ls[Kcd ..docker volume lscd ..[K[3Plscd backend_12_5/ls[Kcd todo-backend/ls[Knano docker-compose.dev.yml docker compose -f docker-compose.dev.yml up --build[15P-it todo-backend-mongo-1 bashexit[Kdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd backend_12_5/todo-backend/ls[Knano docker-compose.dev.yml [Knano docker-compose.dev.yml ls[Kcd backend_12_5/todo-backend/exit[Kdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker -it todo-backend-mongo-1 bashcompose -f docker-compose.dev.yml up --build[23Pnano docker-compose.dev.yml ls[Kcd todo-backend/ls[Kcd backend_12_5/ls[Kcd ..docker volume ls[2Pcd mongo_data/docker volume lsls[Kdocker compose -f docker-compose.dev.yml up --build[C[C[C[C[C[C[C[C[C[C[C-build [A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd--build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m redis Pulling                                                                                   [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m redis Pulling                                                                                   [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m redis Pulling                                                                                   [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠸[0m redis Pulling                                                                                   [34m0.4s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠼[0m redis Pulling                                                                                   [34m0.5s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠴[0m redis Pulling                                                                                   [34m0.6s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠦[0m redis Pulling                                                                                   [34m0.7s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠧[0m redis Pulling                                                                                   [34m0.8s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠇[0m redis Pulling                                                                                   [34m0.9s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠏[0m redis Pulling                                                                                   [34m1.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠋[0m redis Pulling                                                                                   [34m1.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m redis Pulling                                                                                   [34m1.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m redis Pulling                                                                                   [34m1.3s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠸[0m redis Pulling                                                                                   [34m1.4s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠼[0m redis Pulling                                                                                   [34m1.5s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠴[0m redis Pulling                                                                                   [34m1.6s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠦[0m redis Pulling                                                                                   [34m1.7s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠧[0m redis Pulling                                                                                   [34m1.8s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠇[0m redis Pulling                                                                                   [34m1.9s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠏[0m redis Pulling                                                                                   [34m2.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/8
+ [33m⠋[0m redis [[32m⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                         [34m2.1s [0m
+   [33m⠋[0m d128ccd842a6 Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m 6c334acf232e Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.1s [0m
+   [33m⠋[0m f5bc47c37726 Pulling fs layer                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 0/8
+ [33m⠙[0m redis [[32m⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                         [34m2.2s [0m
+   [33m⠙[0m d128ccd842a6 Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m 6c334acf232e Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.2s [0m
+   [33m⠙[0m f5bc47c37726 Pulling fs layer                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 0/8
+ [33m⠹[0m redis [[32m⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                         [34m2.3s [0m
+   [33m⠹[0m d128ccd842a6 Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m 6c334acf232e Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.3s [0m
+   [33m⠹[0m f5bc47c37726 Pulling fs layer                                                                 [34m0.3s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/8
+ [33m⠸[0m redis [[32m⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                         [34m2.4s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [33m⠸[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.4s [0m
+   [33m⠸[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.4s [0m
+   [33m⠸[0m 6c334acf232e Pulling fs layer                                                                 [34m0.4s [0m
+   [33m⠸[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.4s [0m
+   [33m⠸[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.4s [0m
+   [33m⠸[0m f5bc47c37726 Pulling fs layer                                                                 [34m0.4s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/8
+ [33m⠼[0m redis [[32m⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                         [34m2.5s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [33m⠼[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.5s [0m
+   [33m⠼[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.5s [0m
+   [33m⠼[0m 6c334acf232e Pulling fs layer                                                                 [34m0.5s [0m
+   [33m⠼[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.5s [0m
+   [33m⠼[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.5s [0m
+   [33m⠼[0m f5bc47c37726 Pulling fs layer                                                                 [34m0.5s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/8
+ [33m⠴[0m redis [[32m⣿⠀⠀⣿⠀⠀⡀[0m] Pulling                                                                         [34m2.6s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [33m⠴[0m 4f4fb700ef54 Pulling fs layer                                                                 [34m0.6s [0m
+   [33m⠴[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.6s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [33m⠴[0m 20eea55b3ebb Pulling fs layer                                                                 [34m0.6s [0m
+   [33m⠴[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.6s [0m
+   [33m⠴[0m f5bc47c37726 Downloading   2.097MB/15.33MB                                                    [34m0.6s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 4/8
+ [33m⠦[0m redis [[32m⣿⣿⠀⣿⣿⠀⣀[0m] Pulling                                                                         [34m2.7s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [33m⠦[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.7s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [33m⠦[0m 5de2dd3ff2ef Pulling fs layer                                                                 [34m0.7s [0m
+   [33m⠦[0m f5bc47c37726 Downloading   5.243MB/15.33MB                                                    [34m0.7s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 5/8
+ [33m⠧[0m redis [[32m⣿⣿⠀⣿⣿⣿⣤[0m] Pulling                                                                         [34m2.8s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [33m⠧[0m 3090e1a50a6c Pulling fs layer                                                                 [34m0.8s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 5de2dd3ff2ef Download complete [32m[0m                                                               [34m0.7s [0m
+   [33m⠧[0m f5bc47c37726 Downloading    9.437MB/15.33MB                                                   [34m0.8s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 6/8
+ [33m⠇[0m redis [[32m⣿⣿⣿⣿⣿⣿⣶[0m] 12.58MB / 15.33MB Pulling                                                       [34m2.9s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 3090e1a50a6c Download complete [32m[0m                                                               [34m0.8s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 5de2dd3ff2ef Download complete [32m[0m                                                               [34m0.7s [0m
+   [33m⠇[0m f5bc47c37726 Downloading    12.58MB/15.33MB                                                   [34m0.9s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 7/8
+ [33m⠏[0m redis [[32m⣿⣿⣿⣿⣿⣿⣿[0m] 12.58MB / 15.33MB Pulling                                                       [34m3.0s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 3090e1a50a6c Download complete [32m[0m                                                               [34m0.8s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 5de2dd3ff2ef Download complete [32m[0m                                                               [34m0.7s [0m
+   [32m✔[0m f5bc47c37726 Download complete [32m[0m                                                               [34m0.9s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 7/8
+ [33m⠋[0m redis [[32m⣿⣿⣿⣿⣿⣿⣿[0m] 12.58MB / 15.33MB Pulling                                                       [34m3.1s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 3090e1a50a6c Download complete [32m[0m                                                               [34m0.8s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 5de2dd3ff2ef Download complete [32m[0m                                                               [34m0.7s [0m
+   [32m✔[0m f5bc47c37726 Download complete [32m[0m                                                               [34m0.9s [0m
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 8/8[0m
+ [32m✔[0m redis Pulled                 [32m[0m                                                                   [34m3.1s [0m
+   [32m✔[0m d128ccd842a6 Download complete [32m[0m                                                               [34m0.3s [0m
+   [32m✔[0m 4f4fb700ef54 Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 3090e1a50a6c Download complete [32m[0m                                                               [34m0.8s [0m
+   [32m✔[0m 6c334acf232e Download complete [32m[0m                                                               [34m0.5s [0m
+   [32m✔[0m 20eea55b3ebb Download complete [32m[0m                                                               [34m0.6s [0m
+   [32m✔[0m 5de2dd3ff2ef Download complete [32m[0m                                                               [34m0.7s [0m
+   [32m✔[0m f5bc47c37726 Download complete [32m[0m                                                               [34m0.9s [0m
+[?25h[33mWARN[0m[0003] Found orphan containers ([todo-backend-todo-app-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+[1A[1B[0G[?25l[+] Running 1/2
+ [33m⠋[0m Container todo-backend-redis-1  Creating                                                        [34m0.1s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mCreated[0m                                                         [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠙[0m Container todo-backend-redis-1  Starting                                                        [34m0.2s [0m
+ [33m⠙[0m Container todo-backend-mongo-1  Starting                                                        [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠹[0m Container todo-backend-redis-1  Starting                                                        [34m0.3s [0m
+ [33m⠹[0m Container todo-backend-mongo-1  Starting                                                        [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠸[0m Container todo-backend-redis-1  Starting                                                        [34m0.4s [0m
+ [33m⠸[0m Container todo-backend-mongo-1  Starting                                                        [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠼[0m Container todo-backend-redis-1  Starting                                                        [34m0.5s [0m
+ [33m⠼[0m Container todo-backend-mongo-1  Starting                                                        [34m0.5s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+ [33m⠴[0m Container todo-backend-redis-1  Starting                                                        [34m0.6s [0m
+ [33m⠴[0m Container todo-backend-mongo-1  Starting                                                        [34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container todo-backend-redis-1  [32mStarted[0m                                                         [34m0.7s [0m
+ [32m✔[0m Container todo-backend-mongo-1  [32mStarted[0m                                                         [34m0.7s [0m
+[?25h[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                     NAMES
+911f496d41f2   redis     "docker-entrypoint.s…"   6 seconds ago   Up 6 seconds   0.0.0.0:6379->6379/tcp    todo-backend-redis-1
+b67999f5b581   mongo     "docker-entrypoint.s…"   18 hours ago    Up 6 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ docker pscompose -f docker-compose.dev.yml up -d --build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [24Pnano docker-compose.dev.yml 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd backend_12_5/todo-backend/exit[Kdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd backend_12_5/todo-backend/ls[Knano docker-compose.dev.yml docker compose -f docker-compose.dev.yml up -d --build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [24Pnano docker-compose.dev.yml 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker compose -f docker-compose.dev.yml up -d --build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [C[C[C[C[C[C[Cps[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker pscompose -f docker-compose.dev.yml up -d --build[A]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ [24Pnano docker-compose.dev.yml 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd backend_12_5/todo-backend/exit[Kdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K todo-backend-redis-1 bash
+[?2004l[?2004hroot@911f496d41f2:/data# redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> Ke[18C[0K127.0.0.1:6379> Key[19C[0K127.0.0.1:6379> Keys[20C[0K127.0.0.1:6379> Key[19C[0K127.0.0.1:6379> Ke[18C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET "[21C[0K127.0.0.1:6379> GET "a[22C[0K127.0.0.1:6379> GET "ad[23C[0K127.0.0.1:6379> GET "add[24C[0K127.0.0.1:6379> GET "adde[25C[0K127.0.0.1:6379> GET "added[26C[0K127.0.0.1:6379> GET "added_[27C[0K127.0.0.1:6379> GET "added_t[28C[0K127.0.0.1:6379> GET "added_td[29C[0K127.0.0.1:6379> GET "added_tdo[30C[0K127.0.0.1:6379> GET "added_td[29C[0K127.0.0.1:6379> GET "added_t[28C[0K127.0.0.1:6379> GET "added_to[29C[0K127.0.0.1:6379> GET "added_tod[30C[0K127.0.0.1:6379> GET "added_todo[31C[0K127.0.0.1:6379> GET "added_todos[32C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> I[17C[0K127.0.0.1:6379> IN[18C[0K127.0.0.1:6379> INC[19C[0K127.0.0.1:6379> INCR[20C[0K127.0.0.1:6379> INCR [0;90;49mkey[0m[21C[0K127.0.0.1:6379> INCR a[0;90;49m key[0m[22C[0K127.0.0.1:6379> INCR [0;90;49mkey[0m[21C[0K127.0.0.1:6379> INCR "[22C[0K127.0.0.1:6379> INCR "a[23C[0K127.0.0.1:6379> INCR "ad[24C[0K127.0.0.1:6379> INCR "add[25C[0K127.0.0.1:6379> INCR "adde[26C[0K127.0.0.1:6379> INCR "added[27C[0K127.0.0.1:6379> INCR "added_[28C[0K127.0.0.1:6379> INCR "added_:[29C[0K127.0.0.1:6379> INCR "added_[28C[0K127.0.0.1:6379> INCR "added_t[29C[0K127.0.0.1:6379> INCR "added_to[30C[0K127.0.0.1:6379> INCR "added_tod[31C[0K127.0.0.1:6379> INCR "added_todo[32C[0K127.0.0.1:6379> INCR "added_todos[33C[0K127.0.0.1:6379> INCR "added_todos"[0;90;49m key[0m[34C[0K127.0.0.1:6379> INCR "added_todos"[34C
+(integer) 2
+127.0.0.1:6379> [0K127.0.0.1:6379> S[17C[0K127.0.0.1:6379> SE[18C[0K127.0.0.1:6379> SET[19C[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix[0m[20C[0K127.0.0.1:6379> SET "[21C[0K127.0.0.1:6379> SET "a[22C[0K127.0.0.1:6379> SET "ad[23C[0K127.0.0.1:6379> SET "add[24C[0K127.0.0.1:6379> SET "adde[25C[0K127.0.0.1:6379> SET "added[26C[0K127.0.0.1:6379> SET "added_[27C[0K127.0.0.1:6379> SET "added_t[28C[0K127.0.0.1:6379> SET "added_td[29C[0K127.0.0.1:6379> SET "added_tdo[30C[0K127.0.0.1:6379> SET "added_td[29C[0K127.0.0.1:6379> SET "added_t[28C[0K127.0.0.1:6379> SET "added_to[29C[0K127.0.0.1:6379> SET "added_tod[30C[0K127.0.0.1:6379> SET "added_todo[31C[0K127.0.0.1:6379> SET "added_todos[32C[0K127.0.0.1:6379> SET "added_todos"[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[33C[0K127.0.0.1:6379> SET "added_todos" [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds[0m[34C[0K127.0.0.1:6379> SET "added_todos" 1[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-secon[0m[35C[0K127.0.0.1:6379> SET "added_todos" 12[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[36C[0K127.0.0.1:6379> SET "added_todos" 123[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> SET "added_todos" 123[37C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET "added_todos" 123[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> INCR "added_todos"[0;90;49m key[0m[34C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"123"
+127.0.0.1:6379> [0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET "added_todos" 123[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"126"
+127.0.0.1:6379> [0K127.0.0.1:6379> R[17C[0K127.0.0.1:6379> RE[18C[0K127.0.0.1:6379> REM[19C[0K127.0.0.1:6379> REMO[20C[0K127.0.0.1:6379> REMOV[21C[0K127.0.0.1:6379> REMOVE[22C[0K127.0.0.1:6379> REMOVE [23C[0K127.0.0.1:6379> REMOVE[22C[0K127.0.0.1:6379> REMOV[21C[0K127.0.0.1:6379> REMO[20C[0K127.0.0.1:6379> REM[19C[0K127.0.0.1:6379> RE[18C[0K127.0.0.1:6379> R[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL "[21C[0K127.0.0.1:6379> DEL "a[22C[0K127.0.0.1:6379> DEL "ad[23C[0K127.0.0.1:6379> DEL "add[24C[0K127.0.0.1:6379> DEL "adde[25C[0K127.0.0.1:6379> DEL "added[26C[0K127.0.0.1:6379> DEL "added_[27C[0K127.0.0.1:6379> DEL "added_t[28C[0K127.0.0.1:6379> DEL "added_to[29C[0K127.0.0.1:6379> DEL "added_tod[30C[0K127.0.0.1:6379> DEL "added_todo[31C[0K127.0.0.1:6379> DEL "added_todos[32C[0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> DEL "added_todos"[33C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+(nil)
+127.0.0.1:6379> [0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET "added_todos" 123[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> INCR "added_todos"[0;90;49m key[0m[34C[0K127.0.0.1:6379> SET "added_todos" 123[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> s[17C[0K127.0.0.1:6379> se[18C[0K127.0.0.1:6379> set[19C[0K127.0.0.1:6379> set [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix[0m[20C[0K127.0.0.1:6379> set "[21C[0K127.0.0.1:6379> set "A[22C[0K127.0.0.1:6379> set "AD[23C[0K127.0.0.1:6379> set "ADD[24C[0K127.0.0.1:6379> set "ADDE[25C[0K127.0.0.1:6379> set "ADD[24C[0K127.0.0.1:6379> set "AD[23C[0K127.0.0.1:6379> set "A[22C[0K127.0.0.1:6379> set "[21C[0K127.0.0.1:6379> set "a[22C[0K127.0.0.1:6379> set "ad[23C[0K127.0.0.1:6379> set "add[24C[0K127.0.0.1:6379> set "adde[25C[0K127.0.0.1:6379> set "addeD[26C[0K127.0.0.1:6379> set "addeD_[27C[0K127.0.0.1:6379> set "addeD[26C[0K127.0.0.1:6379> set "adde[25C[0K127.0.0.1:6379> set "added[26C[0K127.0.0.1:6379> set "added_[27C[0K127.0.0.1:6379> set "added_t[28C[0K127.0.0.1:6379> set "added_to[29C[0K127.0.0.1:6379> set "added_tod[30C[0K127.0.0.1:6379> set "added_todo[31C[0K127.0.0.1:6379> set "added_todos[32C[0K127.0.0.1:6379> set "added_todos"[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[33C[0K127.0.0.1:6379> set "added_todos" [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds[0m[34C[0K127.0.0.1:6379> set "added_todos" 9[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-secon[0m[35C[0K127.0.0.1:6379> set "added_todos" 90[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seco[0m[36C[0K127.0.0.1:6379> set "added_todos" 900[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-sec[0m[37C[0K127.0.0.1:6379> set "added_todos" 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-se[0m[38C[0K127.0.0.1:6379> set "added_todos" 9001[38C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> set "added_todos" 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-se[0m[38C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> set "added_todos" 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-se[0m[38C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"9001"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL "[21C[0K127.0.0.1:6379> DEL "a[22C[0K127.0.0.1:6379> DEL "ad[23C[0K127.0.0.1:6379> DEL "add[24C[0K127.0.0.1:6379> DEL "adde[25C[0K127.0.0.1:6379> DEL "added[26C[0K127.0.0.1:6379> DEL "added_[27C[0K127.0.0.1:6379> DEL "added_t[28C[0K127.0.0.1:6379> DEL "added_to[29C[0K127.0.0.1:6379> DEL "added_tod[30C[0K127.0.0.1:6379> DEL "added_todo[31C[0K127.0.0.1:6379> DEL "added_todos[32C[0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> DEL "added_todos"[33C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL "added_todos"[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+(nil)
+127.0.0.1:6379> [0K127.0.0.1:6379> GET "added_todos"[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET "added_todos"[33C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@911f496d41f2:/data# exit
+[?2004lexit
+[?2004h]0;kaappi@DESKTOP-C51JTST: ~/backend_12_5/todo-backend[01;32mkaappi@DESKTOP-C51JTST[00m:[01;34m~/backend_12_5/todo-backend[00m$ exit
+[?2004lexit
+
+Script done on 2025-02-18 09:55:18+02:00 [COMMAND_EXIT_CODE="0"]

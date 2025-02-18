@@ -2,6 +2,7 @@ const express = require('express');
 const { Todo } = require('../mongo');
 const { findByIdAndUpdate } = require('../mongo/models/Todo');
 const router = express.Router();
+const { incrementCounter } = require('../redis/index');
 
 /* GET todos listing. */
 router.get('/', async (_, res) => {
@@ -15,6 +16,7 @@ router.post('/', async (req, res) => {
     text: req.body.text,
     done: false,
   });
+  await incrementCounter('added_todos');
   res.send(todo);
 });
 
