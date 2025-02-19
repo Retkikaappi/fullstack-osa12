@@ -9,6 +9,10 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
     completeTodo(todo);
   };
 
+  if (!todos || typeof todos !== 'object') {
+    return <div>No todos</div>;
+  }
+
   return (
     <>
       {todos
@@ -17,8 +21,8 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
             <Todo
               key={`${todo}_${index}`}
               todo={todo}
-              onClickDelete={onClickDelete}
-              onClickComplete={onClickComplete}
+              onClickDelete={onClickDelete(todo)}
+              onClickComplete={onClickComplete(todo)}
             />
           );
         })
