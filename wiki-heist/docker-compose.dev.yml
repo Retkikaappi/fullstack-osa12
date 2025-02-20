@@ -1,0 +1,30 @@
+services:
+  wiki-frontend:
+    image: wikiheist-frontend-dev
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./frontend:/usr/src/app
+    working_dir: /usr/src/app
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8080/api
+    container_name: wiki-frontend-dev
+
+  wiki-backend:
+    image: wikiheist-backend-dev
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    container_name: wiki-backend-dev
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf/:ro
+    ports:
+      - 8080:80
+    container_name: wiki-proxy
+    depends_on:
+      - wiki-frontend
+      - wiki-backend
