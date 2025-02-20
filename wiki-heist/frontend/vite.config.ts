@@ -8,11 +8,11 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'http://backend-dev-testing:3000',
+        target: 'http://localhost:3000',
         changeOrigin: true,
       },
     },
-    allowedHosts:['wiki-frontend-dev']
+    allowedHosts:['wiki-frontend-dev', 'wiki-frontend-prod']
   },
 });
 
